@@ -1,0 +1,31 @@
+header {
+    padding-left: $header-padding;
+    padding-right:$header-padding;
+    display: flex;
+    justify-content: space-between;
+
+    nav {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 10px;
+
+        a {
+            font-weight: bold;
+            color: $link-color;
+            text-decoration: none;
+        }
+    
+        a:hover {
+            font-weight: bolder;
+            color: $selected-link-color;
+            text-decoration: underline;
+        }
+    
+        a.selected {
+            font-weight: bolder;
+            color: $selected-link-color;
+            text-decoration: underline;
+        }
+    }   
+}

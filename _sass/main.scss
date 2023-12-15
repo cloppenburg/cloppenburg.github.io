@@ -1,0 +1,45 @@
+$font-stack: Helvetica, sans-serif;
+$selected-link-color: #0000AA;
+$link-color: #0000FF;
+$header-padding: 250px;
+$content-padding: 250px;
+$footer-padding: 250px;
+
+body {
+    margin: 0px;
+    color: #333;
+    font: 100% $font-stack;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    background-color: aquamarine;
+}
+
+.spacer {
+    height: 200px;
+    background-color: #333;
+}
+
+.content {
+    padding-left: $content-padding;
+    padding-right: $content-padding;
+}
+
+footer {
+    text-align: center;
+    padding-left: $footer-padding;
+    padding-right: $footer-padding;
+}
+
+.warning {
+    background-color: #FF0000;
+    padding: 5px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.current {
+    color: green;
+}
