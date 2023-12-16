@@ -3,7 +3,6 @@ $selected-link-color: #0000AA;
 $link-color: #0000FF;
 $header-padding: 250px;
 $content-padding: 250px;
-$footer-padding: 250px;
 
 body {
     margin: 0px;
@@ -11,26 +10,19 @@ body {
     font: 100% $font-stack;
 }
 
-.logo {
-    width: 100px;
-    height: 100px;
-    background-color: aquamarine;
+a {
+    color: $link-color;
 }
 
 .spacer {
     height: 200px;
-    background-color: #333;
+    background-image: url("/assets/img/pexels-sarah-dietz-3855553.jpg");
+    background-position-y: 50%;
 }
 
 .content {
     padding-left: $content-padding;
     padding-right: $content-padding;
-}
-
-footer {
-    text-align: center;
-    padding-left: $footer-padding;
-    padding-right: $footer-padding;
 }
 
 .warning {

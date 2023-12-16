@@ -10,9 +10,10 @@
         <link rel="stylesheet" href="/assets/css/styles.css">
     </head>
     <body>
-        <div class="warning">Das ist aktuell ein Entwicklungsstand und wird noch bearbeitet.</div>
         <header>
-            <div class="logo"></div>
+            <a href="/">
+                <div class="logo"></div>
+            </a>
             <nav>
                 {% for nav in site.data.navigation %}
                     <a href="{{ nav.link }}" {% if page.url == nav.link %}class="selected"{% endif %}>{{ nav.label }}</a>
@@ -26,10 +27,13 @@
             {{ content }}
         </div>
 
-        <hr />
-
         <footer>
-            Impressum
+            <div class="column">
+                <a href="impressum.html">Impressum</a>
+                <a href="#">Datenschutz</a>
+            </div>
+            <div class="column"></div>
+            <div class="column"></div>
         </footer>
     </body>
 </html>

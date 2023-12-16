@@ -1,12 +1,12 @@
-- link: /about.html
+- link: /ueberuns.html
   label: Das sind wir
-- link: /currently.html
+- link: /aktuelles.html
   label: Aktuelles
-- link: /dates.html
+- link: /termine.html
   label: Termine
-- link: /activities.html
+- link: /aktivitaeten.html
   label: Aktivitäten & Anschaffungen
-- link: /member.html
+- link: /mitgliedschaft.html
   label: Mitglied werden
-- link: /contact.html
+- link: /kontakt.html
   label: Kontakt

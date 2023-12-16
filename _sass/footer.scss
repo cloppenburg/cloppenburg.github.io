@@ -1,0 +1,24 @@
+$footer-bg-color: #777777;
+$footer-padding: 250px;
+$footer-link-color: #DCDCDC;
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: $footer-bg-color;
+    padding-left: $footer-padding;
+    padding-right: $footer-padding;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    .column {
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+        width: 33%;
+    }
+
+    a {
+        color: $footer-link-color;
+    }
+}
