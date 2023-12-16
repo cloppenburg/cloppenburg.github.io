@@ -15,7 +15,11 @@ header {
         background-size: 100px;
     }
 
-    nav {
+    #burger-menu {
+        display: none;
+    }
+
+    #navigation {
         display: flex;
         justify-content: flex-end;
         align-items: center;
@@ -33,4 +37,38 @@ header {
             text-decoration: overline underline;
         }
     }   
+}
+
+@media only screen and (max-width: 600px) {
+    header {
+        .logo {
+            width: 25px;
+            height: 25px;
+            background-image: url("/assets/img/logo.png");
+            background-size: 25px;
+        }
+
+        #burger-menu {
+            display: block;
+            width: 25px;
+            height: 25px;
+            background-image: url("/assets/img/burger.png");
+            background-size: 25px;
+        }
+
+        #burger-menu.active {
+            background-image: url("/assets/img/x.png");
+        }
+
+        #navigation {
+            display: none;
+        }
+
+        #navigation.active {
+            display: flex;
+            flex-direction: column;
+            background-color: #DDDDDD;
+            position: absolute
+        }
+    }
 }

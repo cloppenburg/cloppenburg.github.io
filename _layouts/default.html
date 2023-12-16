@@ -7,7 +7,8 @@
         <meta name="keywords" content="Förderverein, KiTa, Oldenburg"/>
         <meta name="author" content="André Schreck"/>
         <title>{{ page.title }}</title>
-        <link rel="stylesheet" href="/assets/css/styles.css">
+        <link rel="stylesheet" href="/assets/css/styles.css" />
+        <script type="text/javascript" src="/assets/js/util.js"></script>
     </head>
     <body>
         <div class="warning">Das ist aktuell ein Entwicklungsstand und wird noch bearbeitet.</div>
@@ -15,7 +16,8 @@
             <a href="/">
                 <div class="logo"></div>
             </a>
-            <nav>
+            <span id="burger-menu" onclick="toggleMenu()"></span>
+            <nav id="navigation">
                 {% for nav in site.data.navigation %}
                     <a href="{{ nav.link }}" {% if page.url == nav.link %}class="selected"{% endif %}>{{ nav.label }}</a>
                 {% endfor %}
