@@ -2,7 +2,10 @@
     <a href="/">
         <div class="logo"></div>
     </a>
-    <span id="burger-menu" onclick="toggleMenu()"></span>
+    <span id="burger-menu" onclick="toggleMenu()">
+        <i class="fa-solid fa-bars"></i>
+        <i class="fa-solid fa-xmark"></i>
+    </span>
     <nav id="navigation">
         {% for nav in site.data.navigation %}
             <a href="{{ nav.link }}" {% if page.url == nav.link %}class="selected"{% endif %}>{{ nav.label }}</a>
