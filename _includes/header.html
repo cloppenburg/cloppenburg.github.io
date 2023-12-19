@@ -1,0 +1,11 @@
+<header>
+    <a href="/">
+        <div class="logo"></div>
+    </a>
+    <span id="burger-menu" onclick="toggleMenu()"></span>
+    <nav id="navigation">
+        {% for nav in site.data.navigation %}
+            <a href="{{ nav.link }}" {% if page.url == nav.link %}class="selected"{% endif %}>{{ nav.label }}</a>
+        {% endfor %}
+    </nav>
+</header>

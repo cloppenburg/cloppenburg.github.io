@@ -2,68 +2,10 @@
 layout: default
 title: Aktivitäten & Anschaffungen
 ---
-<h1>Aktivitäten & Anschaffungen</h1>
-
-<p>
-    Bisher haben wir folgende Ziele/Wünsche erfolgreich umgesetzt: (Bilder folgen)
-</p>
-
-<h2>Bluetooth-Lautsprecher</h2>
-
-<p>
-    Text und Bilder
-</p>
-
-<h2>Wassertisch</h2>
-
-<p>
-    Text und Bilder
-</p>
-
-<h2>Kameras für alle Gruppen</h2>
-
-<p>
-    Text und Bilder
-</p>
-
-<h2>Gartenumgestaltung</h2>
-
-<p>
-    Text und Bilder
-</p>
-
-<h2>Fahrzeuge</h2>
-
-<p>
-    Text und Bilder
-</p>
-
-<h2>Kaninchenstall</h2>
-
-<p>
-    Text und Bilder
-</p>
-
-<h2>Party-Box mit Mikro</h2>
-
-<p>
-    Text und Bilder
-</p>
-
-<h2>Seifenblasenkünstler</h2>
-
-<p>
-    Text und Bilder
-</p>
-
-<h2>Spielküche</h2>
-
-<p>
-    Text und Bilder
-</p>
-
-<h2>Waldorf-Holzständer</h2>
-
-<p>
-    Text und Bilder
-</p>
+<ul>
+    {% for activity in site.posts %}
+      <li>
+        <a href="{{ activity.url }}">{{ activity.title }}</a>
+      </li>
+    {% endfor %}
+</ul>

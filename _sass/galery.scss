@@ -1,0 +1,39 @@
+#galery {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #000000;
+
+    #images {
+        display: none;
+    }
+
+    #left {
+        width: 10%;
+        cursor: pointer;
+        text-align: right;
+        border: 1px solid #000000;
+    }
+
+    #left:hover {
+        background-color: #777777;
+    }
+
+    #current-image {
+        width: 80%;
+        border: 1px solid #000000;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    #right {
+        width: 10%;
+        cursor: pointer;
+        border: 1px solid #000000;
+    }
+
+    #right:hover {
+        background-color: #777777;
+    }
+}
