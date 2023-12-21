@@ -1,12 +1,12 @@
 $font-stack: Helvetica, sans-serif;
-$selected-link-color: #0000AA;
-$link-color: #0000FF;
+$text-color: #333;
+$link-color: #73468a;
 $header-padding: 15%;
 $content-padding: 15%;
 
 body {
     margin: 0px;
-    color: #333;
+    color: $text-color;
     font: 100% $font-stack;
 }
 
@@ -24,6 +24,38 @@ a {
     padding-left: $content-padding;
     padding-right: $content-padding;
     margin-bottom: 25px;
+
+    ul {
+        li {
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+    }
+
+    .download-link {
+        a {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 5px;
+        
+            .icon {
+                font-size: 1.5em;
+                color: $text-color;
+            }
+
+            .link-label {
+                text-decoration: underline;
+            }
+
+            font-weight: bold;
+            text-decoration: none;
+        }
+    }
+
+    .download-link:not(:last-of-type) {
+        margin-bottom: 10px;
+    }
 }
 
 .warning {

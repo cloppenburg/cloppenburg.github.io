@@ -1,0 +1,6 @@
+- link: /assets/pdf/satzung.pdf
+  label: Satzung
+  icon: fa-regular fa-file-pdf
+- link: /assets/pdf/flyer.pdf
+  label: Mitgliedsantrag
+  icon: fa-regular fa-file-pdf

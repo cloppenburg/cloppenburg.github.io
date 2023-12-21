@@ -3,9 +3,20 @@ layout: default
 title: Mitglied werden
 ---
 <p>
-    Unterstütze die Kinder der KiTa Cloppenburger Straße und werde Mitglied.<br />
-    <a href="/assets/pdf/satzung.pdf" target="_blank">Satzung</a><br />
-    <a href="/assets/pdf/flyer.pdf" target="_blank">Mitgliedsantrag</a>
+    Unterstütze die Kinder der KiTa Cloppenburger Straße und werde Mitglied.
+</p>
+
+<p>
+    {% for download in site.data.downloads %}
+        <div class="download-link">
+            <a href="{{ download.link }}" target="_blank">
+                <span class="icon">
+                    <i class="{{ download.icon }}"></i>
+                </span>
+                <span class="link-label">{{ download.label }}</span>
+            </a>
+        </div>
+    {% endfor %}
 </p>
 
 <p>

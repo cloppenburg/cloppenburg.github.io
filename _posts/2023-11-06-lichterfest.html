@@ -1,21 +1,16 @@
 ---
 layout: activity
 ---
-<p>
-    Laternen, Gesang, Punsch und Kekse
-</p>
-
-<div id="galery">
-    <div id="images">
+<article>
+    <p>
+        Laternen, Gesang, Punsch und Kekse
+     </p>
+     
+     {% capture images %}
         <img src="/assets/img/pexels-naomi-shi-1001914.jpg" />
         <img src="/assets/img/pexels-lina-kivaka-1741230.jpg" />
         <img src="/assets/img/pexels-lukas-296302.jpg" />
-    </div>
-    <div id="left">
-        <i class="fa-solid fa-backward-step"></i>
-    </div>
-    <div id="current-image"></div>
-    <div id="right">
-        <i class="fa-solid fa-forward-step"></i>
-    </div>
-</div>
+     {% endcapture %}
+     
+     {% include galery.html images=images %}
+</article>
