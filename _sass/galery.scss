@@ -1,3 +1,22 @@
+#wall {
+    position: absolute;
+    top: 0;
+    z-index: 1000;
+    background-color: #000000;
+    opacity: 0.75;
+}
+
+#big-image {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 1001;
+    
+    img {
+        width: 100%;
+    }
+}
+
 #galery {
     display: flex;
     justify-content: space-between;
@@ -23,6 +42,7 @@
     #current-image {
         width: 80%;
         border: 1px solid #000000;
+        cursor: pointer;
 
         img {
             width: 100%;
