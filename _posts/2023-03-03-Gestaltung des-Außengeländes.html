@@ -5,4 +5,13 @@ layout: activity
    <p>
       Ein Text in dem steht wie die Kinder das so fanden.
    </p>
+      {% capture images %}
+      <img src="/assets/img/Aussengelände_Haus.jpeg" />
+      <img src="/assets/img/Eingang Spielplatz.jpeg" />
+      <img src="/assets/img/Krippenspielplatz.jpeg" />
+      <img src="/assets/img/Schaukel Krippe.jpeg" />
+      <img src="/assets/img/Schaukel mit Wandbemalung und Finn.jpeg" />
+      <img src="/assets/img/Zaunbemalung.jpeg" />
+   {% endcapture %}
+   {% include galery.html images=images %}
 </article>
